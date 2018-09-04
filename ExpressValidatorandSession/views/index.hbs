@@ -1,6 +1,28 @@
 <h1>Welcome to {{title}}</h1>
-<p>Condition is true</p>
-<form action="test/submit" method="post">
-<input type="text" name="id" id="">
-<input type="submit" value="submit">
+
+{{# if success}}
+<section>
+  <h2>Successfully Posted</h2>
+</section>
+{{ else }} {{# if errors}}
+<section>
+  <ul>
+    {{# each errors}}
+    <li>{{this.msg}}</li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+<form action="/submit" method="post">
+  <div class="input">
+    <input type="email" placeholder="Email" name="email" id="">
+  </div>
+  <div class="input">
+    <input type="password" placeholder="Password" name="password" id="">
+  </div>
+  <div class="input">
+    <input type="password" placeholder="Confirm Password" name="confirmPassword" id="">
+  </div>
+  <button type="submit">Sign up</button>
 </form>
+{{/if}}

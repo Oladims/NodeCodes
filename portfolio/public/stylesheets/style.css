@@ -1,8 +1,260 @@
+
+.chatbox {
+  display: block;
+  float: right;
+  position: sticky;
+  bottom: 10px;
+  right: 2vw;
+  border-radius: 50%;
+  background-color: aqua;
+  width: 4em;
+  height: 4em;
+
+}
+.chat {
+  display: flex;
+  justify-content: center;
+  float: right;
+  position: sticky;
+  bottom: 10px;
+  right: 2vw;
+  border-radius: 50%;
+  background-color: aqua;
+  width: 4em;
+  height: 4em;
+
+}
+.chat i{
+padding-top: 10px;
+}
+.chat:hover{
+  cursor: pointer;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/* NAV SECTION */
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 7%;
+}
+
+nav {
+  position: relative;
+  top: -20px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul.topnav {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+ul.topnav li {
+  display: inline-block;
+  margin-right: 20px;
+  /* cursor: pointer; */
+}
+
+ul.topnav li a {
+  display: inline;
+  color: #4a4a4a;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul.topnav li a.active {
+  text-decoration: underline;
+  color: rgba(0, 35, 122, 0.7);
+}
+
+/* END NAV SECTION */
+/*
+html, body {
+  overflow: hidden;
+} */
+
+canvas {
+  position: absolute;
+  z-index: -1;
+}
+
+body>div {
+  background: rgba(255, 255, 255, .5);
+}
+
+.name {
+  font-size: 80px;
+  letter-spacing: -13px;
+  font-weight: 800;
+  line-height: -10px;
+}
+
+.content {
+  margin-left: 5vw;
+}
+
+.ibrahim {
+  position: relative;
+  top: -32px;
+}
+
+.intro {
+  position: relative;
+  top: -40px;
+  line-height: 5px;
+  font-size: 10px;
+  font-weight: bolder;
+  color: #4a4a4a;
+}
+
+.header {
+  letter-spacing: -5px;
+  font-size: 35px;
+  font-weight: bolder;
+  opacity: .8;
+  margin-left: 4vw;
+}
+
+.socialmedialinks {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 6em;
+}
+
+.titlespan {
+  font-size: 100px;
+  letter-spacing: -10px;
+}
+
+.about {}
+
+.hovered:hover {
+  animation: hoveranimation ease 3s;
+}
+
+@keyframes hoveranimation {
+  50% {
+      transform: translateY(50px);
+  }
+}
+
+.profilepicture {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutext {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+/* Small devices (portrait tablets and large phones, 360px and up) */
+
+@media only screen and (min-width: 320px) {
+  .navbar {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 5%;
+  }
+  nav {
+      font-size: 3.7vw;
+      font-weight: 500;
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+  }
+  .content {
+      padding-top: 20vh;
+      /* padding-left: 20px; */
+  }
+  .name {
+      font-size: 21vw;
+  }
+  .dev {
+      margin: 0;
+  }
+  .ibrahim {
+      position: relative;
+      top: -22px;
+      margin: 0;
+  }
+  .intro {
+      margin: 0;
+      line-height: 5px;
+      font-size: 5vw;
+  }
+  .header {
+      letter-spacing: -5px;
+      font-weight: bolder;
+      opacity: .8;
+      margin-left: 4vw;
+      border: 3px solid red;
+  }
+  .titlespan {
+      font-size: 13vw;
+  }
+  .socialmedialinks {
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 3em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  nav {
+      font-size: 35px;
+      font-weight: 500;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-around;
+  }
+  .content {
+      padding-left: 20px;
+  }
+  .name {
+      position: relative;
+      top: -200px;
+      font-size: 23vw;
+      letter-spacing: -35px;
+      font-weight: 800;
+  }
+  .dev {
+      margin: 0;
+  }
+  .ibrahim {
+      position: relative;
+      top: -300px;
+      margin: 0;
+  }
+  .intro {
+      position: relative;
+      top: -350px;
+      margin: 0;
+      line-height: 5px;
+      font-size: 3vw;
+  }
+  .socialmedialinks {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 6em;
+  }
+  .titlespan {
+      font-size: 100px;
+  }
 }

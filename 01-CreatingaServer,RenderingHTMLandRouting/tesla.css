@@ -1,0 +1,358 @@
+body {
+  background: radial-gradient(#555260, #18171b);
+  overflow: hidden;
+}
+.sasha {
+  transform: rotate(15deg);
+}
+.sasha .tesla-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sasha .car {
+  position: relative;
+}
+.sasha .car-fix {
+  position: absolute;
+  content: "";
+  background-color: #ce4038;
+  width: 10px;
+  height: 10px;
+  left: -231px;
+  top: 9px;
+  z-index: 200;
+  box-shadow: inset 5px 0 0 rgba(255, 255, 255, 0.17);
+}
+.sasha .car-bumper-top {
+  width: 135px;
+  height: 23px;
+  position: absolute;
+  background-color: #ce4038;
+  border: 4px solid;
+  border-radius: 50%;
+  top: -8px;
+  left: -235px;
+  transform: rotate(1deg);
+  border-color: #282a35 transparent transparent #282a35;
+  overflow: hidden;
+  z-index: 99;
+  box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.17);
+}
+.sasha .car-bumper-top .front-light-bulb {
+  position: absolute;
+  width: 33px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50px 0;
+  left: -4px;
+  top: 1px;
+  transform: rotate(-10deg);
+}
+.sasha .car-bumper {
+  position: absolute;
+  width: 180px;
+  height: 65px;
+  border-radius: 25px 70px 70px 100px;
+  background-color: #ce4038;
+  top: -2px;
+  left: -235px;
+  border: 4px solid;
+  border-color: #282a35;
+  z-index: -3;
+  overflow: hidden;
+  box-shadow: inset -5px -10px 0 rgba(51, 51, 51, 0.22), inset 5px 0 0 rgba(255, 255, 255, 0.17);
+}
+.sasha .car-divider {
+  position: absolute;
+  width: 260px;
+  height: 3px;
+  background-color: #282a35;
+  top: 54px;
+  left: -160px;
+}
+.sasha .car-front-light-bulb-glare {
+  position: absolute;
+  height: 20px;
+  width: 200px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4));
+  left: -401px;
+  top: -17px;
+  border-radius: 0 0px 50% 0;
+  transform: rotate(7deg);
+}
+.sasha .car-tire .front, .sasha .car-tire .rear {
+  width: 60px;
+  height: 60px;
+  background: #282a35;
+  position: absolute;
+  border-radius: 50%;
+  top: 22px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sasha .car-tire .front:before, .sasha .car-tire .rear:before {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  content: "";
+  border: 5px solid #333;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+.sasha .car-tire .front {
+  left: -190px;
+}
+.sasha .car-tire .rear {
+  right: -130px;
+}
+.sasha .car-tire .front .detail-1, .sasha .car-tire .rear .detail-1 {
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: #282a35;
+}
+.sasha .car-tire .front .detail-1:before, .sasha .car-tire .rear .detail-1:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: inherit;
+  background-color: #282a35;
+  transform: rotate(90deg);
+}
+.sasha .car-tire .front .detail-2, .sasha .car-tire .rear .detail-2 {
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: #282a35;
+  transform: rotate(45deg);
+}
+.sasha .car-tire .front .detail-2:before, .sasha .car-tire .rear .detail-2:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: inherit;
+  background-color: #282a35;
+  transform: rotate(90deg);
+}
+.sasha .car-tire .front .detail-3, .sasha .car-tire .rear .detail-3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  content: "";
+  background-color: #aaa;
+  opacity: 0.9;
+  border-radius: 50%;
+  z-index: -1;
+}
+.sasha .car-fender {
+  position: absolute;
+  top: -2px;
+  left: -100px;
+  width: 260px;
+  height: 65px;
+  border-radius: 30px 20px 40px 20px;
+  background-color: #ce4038;
+  border: 4px solid;
+  border-color: #282a35;
+  z-index: -2;
+  overflow: hidden;
+  box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.17), inset -5px -4px 0 rgba(51, 51, 51, 0.2);
+}
+.sasha .car-fender .car-shine {
+  position: absolute;
+  width: 40px;
+  height: 165px;
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: rotate(20deg);
+  top: -90px;
+  left: 100px;
+  opacity: 0.4;
+}
+.sasha .car-fender .car-shine:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 165px;
+  background-color: rgba(255, 255, 255, 0.25);
+  left: -30px;
+}
+.sasha .car-fender-bottom {
+  width: 200px;
+  height: 10px;
+  background: #a9302a;
+  position: absolute;
+  top: 53px;
+  left: -95px;
+  border: 4px solid #282a35;
+  transform: skew(35deg);
+}
+.sasha .car-windshield {
+  width: 10px;
+  height: 100px;
+  background: #282a35;
+  position: absolute;
+  top: -60px;
+  left: -90px;
+  transform: rotate(50deg);
+  border-radius: 70px 200px 70px 90px;
+  z-index: -4;
+}
+.sasha .car-side-mirror {
+  position: absolute;
+  width: 26px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  top: -12px;
+  left: -100px;
+  z-index: 99;
+  background-color: #ce4038;
+  border: 4px solid #282a35;
+  box-shadow: inset 3px 0 0 rgba(255, 255, 255, 0.17);
+}
+.sasha .car-starman {
+  position: relative;
+}
+.sasha .car-starman .face {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  top: -60px;
+  left: -10px;
+  border: 4px solid #282a35;
+  overflow: hidden;
+  box-shadow: inset -4px -4px 0 rgba(51, 51, 51, 0.2);
+}
+.sasha .car-starman .face:before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  background: #f7ac76;
+  transform: rotate(-45deg);
+  left: -7px;
+  top: 7px;
+  border: 2px solid #282a35;
+  box-shadow: inset -5px 5px 3px 0 rgba(255, 255, 255, 0.4);
+}
+.sasha .car-starman .back {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  border: 4px solid #282a35;
+  top: -25px;
+  left: 15px;
+  z-index: -4;
+  box-shadow: inset 11px 3px 0 rgba(51, 51, 51, 0.2);
+}
+.sasha .car-starman .hand {
+  position: absolute;
+  width: 70px;
+  height: 12px;
+  background-color: #f2f2f2;
+  border: 4px solid #282a35;
+  border-radius: 20px;
+  left: -45px;
+  top: -15px;
+  z-index: -3;
+  transform: rotate(5deg);
+  box-shadow: inset 0 3px 0 rgba(51, 51, 51, 0.17);
+}
+.sasha .car-starman .steering {
+  width: 10px;
+  height: 30px;
+  background-color: #282a35;
+  position: absolute;
+  border-radius: 10px;
+  top: -25px;
+  left: -50px;
+  z-index: -4;
+}
+.sasha .car .seat {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #282a35;
+  transform: rotate(9.2deg);
+  top: -38px;
+  left: 47px;
+  z-index: 299;
+  box-shadow: 3px 4px 0 rgba(255, 255, 255, 0.17);
+}
+.sasha .car-rear-top {
+  position: absolute;
+  width: 113px;
+  height: 33px;
+  background-color: #ce4038;
+  top: -25px;
+  left: 50px;
+  border-radius: 0 70% 0 0;
+  transform: rotate(9.2deg);
+  border: 4px solid;
+  border-color: #282a35 #282a35 transparent transparent;
+  z-index: 2;
+  box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.17);
+}
+.sasha .car-rear-top .back-light {
+  position: absolute;
+  width: 23px;
+  height: 10px;
+  background-color: #282a35;
+  top: 27px;
+  left: 94px;
+  z-index: 0;
+  border-radius: 0px 0 0 50px;
+}
+.sasha .car-deco {
+  width: 60px;
+  height: 3px;
+  background-color: #282a35;
+  position: absolute;
+  left: 108px;
+  top: 2px;
+  z-index: 99;
+  transform: rotate(8.5deg);
+}
+.sasha .car-deco:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 3px solid #282a35;
+  border-radius: 50%;
+  left: -20px;
+  top: -10px;
+}
+.sasha .car .front-light {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background: #282a35;
+  border-radius: 50px;
+  left: -229px;
+  top: 30px;
+  transform: rotate(-23deg);
+  z-index: 999;
+}
+@keyframes moving {
+  0% {
+    transform: rotate(-40deg) translate(0px, 0px);
+  }
+  50% {
+    transform: rotate(-10deg) translate(-820px, 200px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
